@@ -34,7 +34,8 @@ Will be documented when github action is documented.
 
 1. Follow the [Customization](#customization) section and set all variables with `Required in dev` `true`.
 2. Run `docker-compose up --build`
-3. Navigate to `http://localhost:3400`
+3. Add a `127.0.0.1 localtest.me` entry in your host file. See [How to edit host files](https://www.hostinger.com/tutorials/how-to-edit-hosts-file)
+4. Navigate to `http://localtest.me`
 
 ### Customization
 
