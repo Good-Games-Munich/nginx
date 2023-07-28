@@ -5,6 +5,6 @@ services:
     # Add a name to easy identify
     container_name: nginxProxyProd
 
-  letsencrypt:
+  companion:
     # Add a name to easy identify
-    container_name: nginxProxyLetsEncryptProd
+    container_name: nginxCompanionProd

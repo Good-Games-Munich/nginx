@@ -31,11 +31,10 @@ services:
       - default
       - nginxproxynet
 
-  # TODO: https://hub.docker.com/r/nginxproxy/acme-companion switch to this
-  # https://hub.docker.com/r/jrcs/letsencrypt-nginx-proxy-companion
-  letsencrypt:
-    # https://hub.docker.com/r/jrcs/letsencrypt-nginx-proxy-companion/tags
-    image: jrcs/letsencrypt-nginx-proxy-companion:2.2
+  # https://hub.docker.com/r/nginxproxy/acme-companion
+  companion:
+    # https://hub.docker.com/r/nginxproxy/acme-companion/tags
+    image: nginxproxy/acme-companion:2.2
 
     # https://www.baeldung.com/ops/docker-compose-restart-policies
     restart: always
@@ -56,6 +55,7 @@ services:
       - html:/usr/share/nginx/html
       - dhparam:/etc/nginx/dhparam
       - certs:/etc/nginx/certs:rw
+      - acme:/etc/acme.sh
       - /var/run/docker.sock:/var/run/docker.sock:ro
 
     # Reverse proxy network.
@@ -69,6 +69,7 @@ volumes:
   html:
   dhparam:
   certs:
+  acme:
 
 # Reverse proxy network. See: https://github.com/Good-Games-Munich/nginx
 networks:

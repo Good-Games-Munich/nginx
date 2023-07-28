@@ -39,7 +39,7 @@ Will be documented when github action is documented.
 
 ### Customization
 
-Create a environment file `touch .env.local`. Override variables in the `{variable name}={variable value}` format. All required variables need to be overridden for the respected environment.
+Create a environment file `touch .env`. Override variables in the `{variable name}={variable value}` format. All required variables need to be overridden for the respected environment.
 
 | Variable        | Description                                   | Required in dev | Required in prod | Default value |
 | --------------- | --------------------------------------------- | --------------- | ---------------- | ------------- |

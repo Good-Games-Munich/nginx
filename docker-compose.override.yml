@@ -10,9 +10,9 @@ services:
       # Try to force color in the terminal because pretty!
       FORCE_COLOR: 1
 
-  letsencrypt:
+  companion:
     # Add a name to easy identify
-    container_name: nginxProxyLetsEncryptDev
+    container_name: nginxCompanionDev
 
     environment:
       # Try to force color in the terminal because pretty!
