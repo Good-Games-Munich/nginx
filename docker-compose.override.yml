@@ -1,0 +1,33 @@
+# This file extends the docker-compose.yml with develop configurations/overrides. https://docs.docker.com/compose/compose-file/13-merge/
+# This file gets applied automatically when no --file parameter is provided
+version: "3.8"
+services:
+  nginx-proxy:
+    # Add a name to easy identify
+    container_name: nginxProxyDev
+
+    environment:
+      # Try to force color in the terminal because pretty!
+      FORCE_COLOR: 1
+
+  letsencrypt:
+    # Add a name to easy identify
+    container_name: nginxProxyLetsEncryptDev
+
+    environment:
+      # Try to force color in the terminal because pretty!
+      FORCE_COLOR: 1
+
+  # https://hub.docker.com/r/jwilder/whoami
+  # Local test container needs a 127.0.0.1 localtest.me in your host file to work. https://www.hostinger.com/tutorials/how-to-edit-hosts-file
+  whoami:
+    image: jwilder/whoami
+
+    # Default test service port. This line is not here to configure something. it is more of a configuration so chaning it will do nothing
+    ports:
+      - 8000
+
+    environment:
+       # Reverse proxy config. See: https://github.com/Good-Games-Munich/nginx
+      VIRTUAL_HOST: localtest.me
+      VIRTUAL_PORT: 8000
