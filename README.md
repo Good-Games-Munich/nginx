@@ -28,12 +28,12 @@ Routes traffic to the corresponding containers.
 
 ### Production
 
-Will be documented when github action is documented.
+Follow [Creating a release](https://github.com/Good-Games-Munich/.github/wiki/workflows#creating-a-release).
 
 ### Development
 
-1. Follow the [Customization](#customization) section and set all variables with `Required in dev` `true`.
-2. Run `docker-compose up --build`
+1. Follow [local setup](https://github.com/Good-Games-Munich/.github/wiki/workflows#local-setup).
+2. Follow the [Customization](#customization) section and set all variables with `Required in dev` `true`.
 3. Add a `127.0.0.1 localtest.me` entry in your host file. See [How to edit host files](https://www.hostinger.com/tutorials/how-to-edit-hosts-file)
 4. Navigate to `http://localtest.me`
 
@@ -49,13 +49,7 @@ Create a environment file `touch .env`. Override variables in the `{variable nam
 
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1. Fork the Project
-2. Create your Feature Branch (`git switch -c feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Follow [contributing](https://github.com/Good-Games-Munich/.github/wiki/workflows#contributing).
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
