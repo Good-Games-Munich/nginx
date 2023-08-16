@@ -6,6 +6,12 @@
 <!-- PROJECT HEADER -->
 <br />
 <p align="center">
+  <!-- https://github.com/stefanjudis/github-light-dark-image-example -->
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.github.com/Good-Games-Munich/assets/main/logos/GGM_logo_white.png">
+    <img alt="Logo" src="https://raw.github.com/Good-Games-Munich/assets/main/logos/GGM_logo_black.png" height="150">
+  </picture>
+
   <h3 align="center">🛣️ Nginx</h3>
 
   <p align="center">
