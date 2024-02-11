@@ -4,7 +4,7 @@ services:
   # https://hub.docker.com/r/jwilder/nginx-proxy
   nginx-proxy:
     # https://hub.docker.com/r/jwilder/nginx-proxy/tags
-    image: jwilder/nginx-proxy:1.3-alpine
+    image: jwilder/nginx-proxy:1.5-alpine
 
     labels:
       - com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy
