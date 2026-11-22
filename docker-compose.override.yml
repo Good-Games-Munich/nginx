@@ -2,9 +2,17 @@
 # This file gets applied automatically when no --file parameter is provided
 version: "3.8"
 services:
-  nginx-proxy:
+  nginx:
     # Add a name to easy identify
-    container_name: nginxProxyDev
+    container_name: nginxDev
+
+    environment:
+      # Try to force color in the terminal because pretty!
+      FORCE_COLOR: 1
+
+  docker-gen:
+    # Add a name to easy identify
+    container_name: nginxDockerGenDev
 
     environment:
       # Try to force color in the terminal because pretty!
