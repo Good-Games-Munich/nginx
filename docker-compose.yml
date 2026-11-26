@@ -5,7 +5,7 @@ services:
   # https://hub.docker.com/_/nginx
   nginx:
     # https://hub.docker.com/_/nginx/tags
-    image: nginx:1.31.9-alpine
+    image: nginx:1.31.10-alpine
 
     labels:
       # Lets docker-gen find the nginx container to reload it
