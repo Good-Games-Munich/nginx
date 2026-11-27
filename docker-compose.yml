@@ -40,7 +40,7 @@ services:
   # The dockergen tag only contains docker-gen and nginx.tmpl. It renders conf.d/default.conf and reloads nginx.
   docker-gen:
     # https://hub.docker.com/r/nginxproxy/nginx-proxy/tags
-    image: nginxproxy/nginx-proxy:1.11.6-dockergen
+    image: nginxproxy/nginx-proxy:1.11.8-dockergen
 
     labels:
       # Lets acme-companion find the docker-gen container
